@@ -1,0 +1,134 @@
+
+html{
+    margin:auto;
+}
+header {
+    margin: 2em 3em 5em 25em;
+    
+    width: 1800px;
+    height: 200px;
+    
+    text-align: center;
+    display: table-cell;
+    left:0px;
+   
+    }
+
+    html{
+        background-image: url("https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+        background-repeat : no-repeat;
+        background-size : cover;
+    }
+    
+    nav{
+      position: fixed;
+      margin: 1em 3em 5em 3.35em;
+        width: 100px; 
+        float: left;
+
+        vertical-align: middle;
+
+        font-size : 28px;
+        background-color: black;
+    }
+
+    nav ul {
+        width: 200px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    body .side {
+        position: absolute;
+        margin-top:1em;
+        margin-left:65em;
+        float:left;
+
+        padding-top:3em;
+        height: 620px;
+        width: 200px; 
+
+        text-align: center;
+        display: table-cell;
+
+        background-color:black;
+        vertical-align: middle;
+
+        color: white;
+        font-size: 5mm;
+        font-style: italic;
+    }
+        
+    main {
+    
+    margin: 2em 3em 3em 20em;
+padding-left:5em;
+    width: 800px;
+    height: 590px;
+
+    background-color: white;
+    }        
+        #submit1{
+            position: absolute;
+            top:930px;
+            left:850px;
+        }
+
+    
+        .err{
+            color: red;
+        }
+        
+    footer {
+
+        margin: 10em, 10em, 10em, 10em;
+        width: 1800px;
+        height: 200px;
+        
+        position: sticky;
+        
+        text-align: center;
+        display: table-cell;
+
+        color : white;
+        font-size: 5mm;
+        font-style: italic;    
+    }
+
+    body{
+        margin-top: 30px;
+        margin-bottom:100px;       
+    }
+
+    .err_msg{
+        color: red;
+    }
+    
+    #name{
+     font-style: italic;
+     font-weight: bold;
+    }
+    
+    #declare{
+    margin : auto;
+    width: 600px;
+    height: 400px;
+    padding: 10px 10px;
+    
+    font-size : 24px;
+    background-color: lightslategray;
+    }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel='stylesheet' href='css/normalise.css' type='text/css' media='screen'>
+    <script src="info.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Justin & Daniels</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="J&D.jpg" alt="J&D" class="center">
+    </header>
+
+
+
+    <nav>
+        <ul>
+            <li><a href=" honesty.html"> HONESTY </a></li>
+            <li><a href="info.html"> INFO </a></li>
+
+        </ul>
+    </nav>
+
+    <div class="side">
+        <div class="item">
+            <div class="item_price">
+                <img src="https://cdn.shopify.com/s/files/1/0169/1062/articles/light_breezy_500x.jpg?v=1571432012"
+                    alt="LIGHT & BREEZY" height="200" width="150">
+                <div class="item_title">
+                    LIGHT & BREEZY
+                </div>
+                <div>CAD $25</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="item">
+            <div class="item_price">
+                <img src="https://cdn.shopify.com/s/files/1/0169/1062/articles/FullSizeRender_500x.jpeg?v=1571428100"
+                    alt="APPLE HOTTODY" height="200" width="150">
+
+                <div class="item_title">
+                    APPLE HOTTODY
+                </div>
+
+                <div>CAD $95</div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <form id="info" name="signup" method="POST" action="https://httpbin.org/post"
+            onsubmit="return formValidation();">
+
+            <br>
+
+            <h1 style="text-align:center;">WELCOME TO JUSTIN'S WEB222 WEBSITE</h1>
+            <h2 style="text-align:center;">INFO</h2>
+
+            <div class="info">
+                <p>
+                    <label for="f_name">First Name </label>
+                    <input type="text" name="f_name" id="f_name" onchange="F_name_validator()" />
+                    <span class="err" id="f_nameError"></span>
+                </p>
+                <p>
+                    <label for="s_name">Last Name </label>
+                    <input type="text" name="s_name" id="s_name" onchange="S_name_validator()" />
+                    <span class="err" id="S_nameError"></span>
+                </p>
+                <p>
+                    <label for="u_name">Username </label>
+                    <input type="text" name="u_name" id="u_name" onchange="U_name_validator()" />
+                    <span class="err" id="u_nameErr"></span>
+                </p>
+                <p>
+                    <label for="pass_word">Password </label>
+                    <input type="password" name="pass_word" id="pass_word" onchange="password_validator()" />
+                    <span class="err" id="pass_wordError"></span>
+                </p>
+                <p>
+                    <label for="c_password">Password again </label>
+                    <input type="password" name="c_password" id="c_password" onchange="password_doublecheck()" />
+                    <span class="err" id="C_pass_wordError"></span>
+                </p>
+                <p>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                    <label for="age">Age </label>
+                    <input type="text" name="age" id="age" onchange="Age_validator()" />
+                    <span class="err" id="ageError"></span>
+                </p>
+                <p>
+                    <label for="edu">Education Level </label>
+                    <select name="edu" id="edu">
+                        <option value="0">-select-</option>
+                        <option value="1">Technical Diploma</option>
+                        <option value="2">College Diploma</option>
+                        <option value="3">Bachelor's Degree</option>
+                        <option value="4">Master's Degree</option>
+                        <option value="5">Ohters</option>
+                    </select>
+                    <span class="err" id="degreeError"></span>
+                </p>
+                <p>
+                    Education Status
+                    <span class="err" id="edu_statusError"></span>
+                    <br>
+                    <input type="radio" name="edustat" id="edustat1" value="Graduated" /> Graduated
+                    <input type="radio" name="edustat" id="edustat2" value="Current enrolled" /> Current enrolled
+                    <input type="radio" name="edustat" id="edustat3" value="Did not graduate" /> Did not graduate
+                </p>
+
+                <input type="hidden" name="lastName" id="lastName" value="Ahn" />
+                <input type="hidden" name="studentId" id="studentId" value="157826181" />
+            </div>
+        </form>
+
+        <br>
+        <input type="submit" id="submit" form="info" value="Submit"> &nbsp; &nbsp;
+        <input type="reset" id="reset" form="info" value="Reset" onclick="removeError()">
+    </main>
+
+    <footer>
+        <br><br>
+        <img src="./J&D.png" alt="J&D" class="center">
+        <br>
+        "This website is a experimental website made by Jaehyun Ahn" <br>
+        All the images are from "https://www.cocktailemporium.com/" and "https://www.pexels.com/"
+        <br><br><br>
+        <div class="center">
+            &copy; 2019 Jaehyun Ahn
+            <br>
+            &copy; Copyright Cocktail Emporium Inc. 2019. Site by Kastor & Pollux.
+        </div>
+    </footer>
+
+</body>
+
+</html>
